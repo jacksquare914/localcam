@@ -1,0 +1,85 @@
+ripped up 0 segments, 0 vias, 0 stale zone fills
+
+differential pairs (coupled, F.Cu only, no vias):
+    [CSI_D1_/CSI_CLK/CSI_D0_/USB_DM] CSI_D1_N -> coupled
+    [CSI_D1_/CSI_CLK/CSI_D0_/USB_DM] CSI_CLK_N -> no
+    [CSI_D1_/CSI_CLK/CSI_D0_/USB_DM] CSI_D0_N -> coupled
+    [CSI_D1_/CSI_CLK/CSI_D0_/USB_DM] USB_DM -> no
+    [CSI_D0_/CSI_CLK/CSI_D1_/USB_DM] CSI_D0_N -> coupled
+    [CSI_D0_/CSI_CLK/CSI_D1_/USB_DM] CSI_CLK_N -> coupled
+    [CSI_D0_/CSI_CLK/CSI_D1_/USB_DM] CSI_D1_N -> coupled
+    [CSI_D0_/CSI_CLK/CSI_D1_/USB_DM] USB_DM -> no
+    [CSI_CLK/CSI_D1_/CSI_D0_/USB_DM] CSI_CLK_N -> coupled
+    [CSI_CLK/CSI_D1_/CSI_D0_/USB_DM] CSI_D1_N -> coupled
+    [CSI_CLK/CSI_D1_/CSI_D0_/USB_DM] CSI_D0_N -> coupled
+    [CSI_CLK/CSI_D1_/CSI_D0_/USB_DM] USB_DM -> no
+  CSI_D0_N   /CSI_D0_P    OK    14.92 /  14.92 mm   skew     0 um
+  CSI_CLK_N  /CSI_CLK_P   OK    14.72 /  14.72 mm   skew     0 um
+  CSI_D1_N   /CSI_D1_P    OK    14.51 /  14.51 mm   skew     0 um
+  USB_DM     /USB_DP      FAILED -- falls back to single-ended
+
+USB-C D+/D- bowtie (no vias, crosses above and below the pad row):
+  USB_DM_CON  OK
+  USB_DP_CON  OK
+
+power (one via per rail group, spine on In2.Cu):
+  VBUS_IN  3 pad(s), 3 via(s), 0 reached on top, 2/2 power-layer link(s), +3 redundant via(s)
+  +5V      11 pad(s), 5 via(s), 6 reached on top, 4/4 power-layer link(s), +5 redundant via(s)
+  +3V3     11 pad(s), 6 via(s), 5 reached on top, 5/5 power-layer link(s)
+  +1V8     5 pad(s), 3 via(s), 2 reached on top, 2/2 power-layer link(s)
+
+single-ended signals:
+  USB_DM       1/1
+  USB_DM_CON   1/1
+  USB_DP       1/1
+  USB_DP_CON   1/1
+  MCLK0        1/1
+  CAM_PWDN     1/1
+  CAM_RST      1/1
+  CAM_SCL      2/2
+  CAM_SDA      1/2
+  SD_CLK       1/1
+  SD_CMD       1/1
+  SD_D0        0/1
+  SD_D1        0/1
+  SD_D2        1/1
+  SD_D3        1/1
+  UART2_TX     1/1
+  UART2_RX     1/1
+  NPOR_RST     3/3
+  ADC0_RECOV   1/1
+  RECOV_HDR    1/1
+  VBUS_DET     1/2
+  CC1          1/1
+  CC2          0/1
+  LED_STAT     1/1
+  LED_A        1/1
+
+rip-up and retry (5 link(s) blocked):
+  CAM_SDA      R6.2: ripped 3 net(s), no gain -- put back
+  SD_D0        J2.7: ripped 6 net(s), no gain -- put back
+  SD_D1        J2.8: ripped 5 net(s), no gain -- put back
+  VBUS_DET     R7.2: ripped 2 net(s), no gain -- put back
+  CC2          R2.1: ripped 1 net(s) -> routed
+  -- second round, wider corridor --
+  CAM_SDA      R6.2: ripped 4 net(s), no gain -- put back
+  SD_D0        J2.7: ripped 6 net(s), no gain -- put back
+  SD_D1        J2.8: ripped 6 net(s) -> routed, 1 new break(s)
+  VBUS_DET     R7.2: ripped 3 net(s), no gain -- put back
+
+GND: 39 pad(s) stitched to the plane, 11 with no room for a via: U1.55, U1.56, J1.A1, J1.A12, J1.B1, J1.B12, U2.2, C2.2
+
+last resort (0.15 mm track / 0.10 mm gap on these links only):
+  CAM_SDA      R6.2: still blocked
+  VBUS_DET     R7.2: still blocked
+  SD_D3        J2.2: still blocked
+
+geometry repair: 2 segment(s) rebuilt as L
+geometry: 461 orthogonal + 18 chamfer(s) on the camera pairs
+
+UNROUTED (3):
+    CAM_SDA R6.2
+    VBUS_DET R7.2
+    SD_D3 J2.2
+
+wrote 479 segments, 102 vias -> routed_h1.kicad_pcb

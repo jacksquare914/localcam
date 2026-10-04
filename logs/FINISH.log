@@ -1,0 +1,19 @@
+ripped up 479 segments, 102 vias, 0 stale zone fills
+kept 479 segments and 102 vias from the previous run
+
+finishing the connections the audit found missing:
+  CAM_SDA J3.14: routed to R6.2
+  GND U2.2: via to the plane placed
+  -- rip-up round 1 --
+  SD_D3 J2.2: ripped 4, broke 2 other(s) -- put back
+  VBUS_DET R7.2: ripped 3, no gain -- put back
+  -- rip-up round 2 --
+  SD_D3 J2.2: ripped 4, broke 2 other(s) -- put back
+  VBUS_DET R7.2: ripped 3, no gain -- put back
+geometry: 480 orthogonal + 18 chamfer(s) on the camera pairs
+
+UNROUTED (2):
+    SD_D3 J2.2
+    VBUS_DET R7.2
+
+wrote 498 segments, 107 vias -> routed_h3.kicad_pcb

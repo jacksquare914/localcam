@@ -1,0 +1,19 @@
+LocalCam1.kicad_pcb   (Rev A2, after the A-16 card-detect fix and the J2.9 stitch)
+board 75 x 44 mm   pads 228  tracks 499  vias 108
+
+tightest gaps (copper edge to copper edge, true distance):
+    0.150 mm   F.Cu    CC1
+    0.150 mm   F.Cu    CC2
+    0.150 mm   F.Cu    CSI_D1_N
+    0.150 mm   F.Cu    GND
+    0.150 mm   F.Cu    USB_DM_CON
+    0.150 mm   F.Cu    USB_DP_CON
+
+CLEARANCE: nothing closer than 0.15 mm  -- clean
+(JLCPCB's floor for this stack-up is 0.09 mm, so the whole board has 1.7x margin.)
+
+Measured with a Euclidean distance transform, not a square-kernel dilation: a square
+kernel of radius 0.15 mm reaches 0.21 mm diagonally and reported every legal 0.18 mm
+differential-pair gap as a violation. The number above is the real gap.
+
+Produced by tools/continuity.py, which did not do the routing.

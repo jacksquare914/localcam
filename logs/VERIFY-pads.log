@@ -1,0 +1,12 @@
+LocalCam1.kicad_pcb   (Rev A2, after the A-16 card-detect fix and the J2.9 stitch)
+board 75 x 44 mm   pads(netted) 228  tracks 499  vias 108
+simulated GND pour: 8788 mm2 of copper added across ['B.Cu', 'F.Cu', 'In1.Cu']
+
+net           pad                      at   problem
+--------------------------------------------------------------
+SD_D3         J2.2          (55.77, 28.5)   separate island
+VBUS_DET      R7.2          (19.41, 32.6)   separate island
+
+PADS: 226/228 netted pads properly connected   |   NETS: 34/36 whole (with the pour simulated)
+
+Produced by tools/padaudit.py, which did not do the routing.

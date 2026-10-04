@@ -1,0 +1,56 @@
+board 75 x 44 mm   pads 226  tracks 479  vias 102  filled zone polys 0
+!! 3 zone(s) NOT FILLED - press B in KiCad and save, or pours are ignored:
+     GND on In1.Cu
+     GND on B.Cu
+     GND on F.Cu
+
+net             pads  islands   status
+----------------------------------------------------
++1V8               5        1   OK
++3V3              11        1   OK
++5V               11        1   OK
+ADC0_RECOV         2        1   OK
+CAM_PWDN           2        1   OK
+CAM_RST            2        1   OK
+CAM_SCL            3        1   OK
+CAM_SDA            3        2   MISSING 1 connection(s)
+CC1                2        1   OK
+CC2                2        1   OK
+CSI_CLK_N          2        1   OK
+CSI_CLK_P          2        1   OK
+CSI_D0_N           2        1   OK
+CSI_D0_P           2        1   OK
+CSI_D1_N           2        1   OK
+CSI_D1_P           2        1   OK
+GND               55       50   MISSING 49 connection(s)
+LED_A              2        1   OK
+LED_STAT           2        1   OK
+MCLK0              2        1   OK
+NPOR_RST           4        1   OK
+RECOV_HDR          2        1   OK
+SD_CLK             2        1   OK
+SD_CMD             2        1   OK
+SD_D0              2        1   OK
+SD_D1              2        1   OK
+SD_D2              2        1   OK
+SD_D3              2        2   MISSING 1 connection(s)
+UART2_RX           2        1   OK
+UART2_TX           2        1   OK
+USB_DM             2        1   OK
+USB_DM_CON         3        1   OK
+USB_DP             2        1   OK
+USB_DP_CON         3        1   OK
+VBUS_DET           3        2   MISSING 1 connection(s)
+VBUS_IN            5        1   OK
+
+CONTINUITY: 32/36 nets fully connected   -- 52 connections still missing
+
+tightest gaps (copper edge to copper edge, true distance):
+    0.150 mm   F.Cu    CC1
+    0.150 mm   F.Cu    CC2
+    0.150 mm   F.Cu    CSI_D1_N
+    0.150 mm   F.Cu    GND
+    0.150 mm   F.Cu    USB_DM_CON
+    0.150 mm   F.Cu    USB_DP_CON
+
+CLEARANCE: nothing closer than 0.15 mm  -- clean

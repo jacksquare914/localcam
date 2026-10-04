@@ -1,0 +1,17 @@
+# KiCad working files
+*-backups/
+*.kicad_prl
+fp-info-cache
+~*
+*.lck
+*.bak
+# fab output — regenerate with hardware/make-fab.sh
+fab/
+*-gerbers.zip
+# python
+__pycache__/
+*.pyc
+# router scratch
+routed_*.kicad_pcb
+base*.kicad_pcb
+merged.kicad_pcb
