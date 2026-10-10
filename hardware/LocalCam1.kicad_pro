@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.2,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -131,8 +131,8 @@
         "pth_inside_courtyard": "error",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -156,22 +156,22 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.09,
+        "min_clearance": 0.1,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.2,
+        "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.2,
-        "min_hole_to_hole": 0.2,
+        "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
-        "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
-        "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.15,
-        "min_track_width": 0.09,
-        "min_via_annular_width": 0.13,
-        "min_via_diameter": 0.25,
+        "min_silk_clearance": 0.15,
+        "min_text_height": 1.0,
+        "min_text_thickness": 0.15,
+        "min_through_hole_diameter": 0.2,
+        "min_track_width": 0.1,
+        "min_via_annular_width": 0.075,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -284,7 +284,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "A"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -543,7 +543,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 0.12,
         "diff_pair_gap": 0.18,
         "diff_pair_width": 0.22,
         "line_style": 0,
@@ -551,7 +551,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": -1,
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "tuning_profile": "",
@@ -569,7 +569,7 @@
         "microvia_drill": 0.1,
         "name": "MIPI_100R",
         "pcb_color": "rgba(90, 200, 250, 0.400)",
-        "priority": -1,
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.22,
         "tuning_profile": "",
@@ -579,7 +579,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.12,
         "diff_pair_gap": 0.18,
         "diff_pair_width": 0.22,
         "line_style": 0,
@@ -587,7 +587,7 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "pcb_color": "rgba(220, 80, 60, 0.400)",
-        "priority": -1,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
         "tuning_profile": "",
@@ -605,7 +605,7 @@
         "microvia_drill": 0.1,
         "name": "USB_90R",
         "pcb_color": "rgba(250, 200, 90, 0.400)",
-        "priority": -1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.27,
         "tuning_profile": "",
@@ -779,7 +779,7 @@
       {
         "filename": "LocalCam1.kicad_sch",
         "name": "LocalCam1",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "3cd36550-142f-54a5-be90-e251ab797ad4"
       }
     ],
     "used_designators": "",
@@ -787,8 +787,8 @@
   },
   "sheets": [
     [
-      "00000000-0000-0000-0000-000000000000",
-      ""
+      "3cd36550-142f-54a5-be90-e251ab797ad4",
+      "LocalCam1"
     ]
   ],
   "text_variables": {},
